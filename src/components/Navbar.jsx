@@ -6,7 +6,10 @@ export default  function Navbar(){
     return(
     <>
       <nav>
-        <Link to={"/"}>Home</Link>
+        <h1>Car4You</h1>
+        <Link to={"/"}> Home </Link>
+        <Link to={"/cars"}> cars for sale </Link>
+        <Link to={"/contacts"}> contact </Link>
         </nav>  
     </>)
 }
