@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "localhost:8080/cars" ;
+const BASE_URL = "http://localhost:8080/cars" ;
 
 export const getCars = () => {
     return axios.get(BASE_URL)

@@ -2,8 +2,6 @@ import {createSlice} from "@reduxjs/toolkit"
 
 const initialState = {
     cars : [] ,
-    loading : false ,
-    error : null 
 }
 
 const carsSlice = createSlice(
@@ -12,14 +10,14 @@ const carsSlice = createSlice(
     initialState ,
     reducers:{
         setCars:(state,action)=>{
-            initialState.cars = action.payload ;
+            state.cars = action.payload ;
             
         },
         addCar:(state,action)=>{
-            initialState.cars.push(action.payload) ;
+            state.cars.push(action.payload) ;
         },
         removeCar:(state,action)=>{
-            initialState.cars = initialState.cars.filter((car)=>
+            state.cars = state.cars.filter((car)=>
                 car.id !== action.payload
             )
         },

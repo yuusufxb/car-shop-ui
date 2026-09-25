@@ -1,0 +1,169 @@
+.car-card {
+  width: 360px;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+}
+
+/* IMAGE */
+
+.car-image {
+  height: 210px;
+  background: linear-gradient(
+    135deg,
+    #1f2937,
+    #111827
+  );
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-placeholder {
+  font-size: 75px;
+  filter: grayscale(1);
+}
+
+/* BADGE */
+
+.car-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  background: #ef4444;
+  color: white;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+/* CONTENT */
+
+.car-content {
+  padding: 22px;
+}
+
+.car-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 18px;
+}
+
+.car-brand {
+  margin: 0;
+
+  color: #ef4444;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.car-header h2 {
+  margin: 4px 0 0;
+
+  font-size: 23px;
+  color: #111827;
+}
+
+.car-price {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  color: #111827;
+}
+
+/* DETAILS */
+
+.car-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  padding: 15px 0;
+
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.car-details span {
+  color: #6b7280;
+
+  font-size: 13px;
+}
+
+/* DESCRIPTION */
+
+.car-description {
+  color: #6b7280;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  margin: 16px 0;
+}
+
+/* FOOTER */
+
+.car-footer {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-footer span {
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.car-footer button {
+  border: none;
+
+  background: #111827;
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.car-footer button:hover {
+  background: #ef4444;
+}
