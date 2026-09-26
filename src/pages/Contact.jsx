@@ -24,6 +24,21 @@ export default function Contact(){
 
     return(
         <>
+        <section className="cars-hero">
+            <div>
+            <p>CAR4YOU</p>
+
+            <h1>
+                Find Your
+                <span> Perfect Car.</span>
+            </h1>
+
+            <p className="hero-description">
+                Explore our collection of quality vehicles
+                and find the one that's right for you.
+            </p>
+            </div>
+        </section>
         <div className="contact-container">
             <h1>Contact</h1>
             <p className="subtitle">Have a question? Send me a message.</p>
