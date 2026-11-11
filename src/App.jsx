@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Cars from './pages/Cars'
 import Contact from './pages/Contact'
 import { AnimatePresence, motion } from 'framer-motion'
+import Login from './pages/Login'
 
 function Page({ children }) {
   return (
@@ -51,6 +52,14 @@ function App() {
             element={
               <Page>
                 <Contact />
+              </Page>
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <Page>
+                <Login />
               </Page>
             }
           />
